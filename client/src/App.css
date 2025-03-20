@@ -1,0 +1,143 @@
+div {
+    text-align: center;
+}
+.inter-text {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+table {
+    width: 60%; /* Adjust the width as needed */
+    margin: 50px auto; /* Centers the table horizontally */
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+td button {
+    background-color: black; /* Black background */
+    color: chartreuse; /* Green text */
+    border: 2px solid green; /* Green border */
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: 0.0s ease-in-out; /* Smooth transition */
+}
+
+td button:hover {
+    background-color: chartreuse; /* Green background on hover */
+    color: black; /* Black text on hover */
+    border: 2px solid black; /* Black border on hover */
+}
+.search-text {
+    outline: 2px solid green; /* Green outline */
+    border: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: green; /* Text color green */
+    background-color: black; /* Black background */
+    border-radius: 5px; /* Rounded corners */
+    transition: 0.0s ease-in-out;
+}
+td button:active {
+    background-color: #0a5a0a; /* Darker green */
+}
+.search-text:focus {
+    outline: 2px solid limegreen; /* Brighter green outline on focus */
+}
+.search-text::placeholder {
+    color: green; /* Green placeholder text */
+    opacity: 0.7; /* Adjust opacity for better visibility */
+    font-style: italic; /* Optional: makes it italic */
+}
+.add-racer {
+    background-color: black; /* Black background */
+    color: chartreuse; /* Green text */
+    border: 2px solid green; /* Green border */
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: 0.0s ease-in-out; /* Smooth transition */
+}
+
+.add-racer:hover {
+    background-color: chartreuse; /* Green background on hover */
+    color: black; /* Black text on hover */
+    border: 2px solid black; /* Black border on hover */
+}
+.add-racer:active {
+    background-color: #0a5a0a; /* Darker green */
+}
+.trow:hover{
+    background-color:chartreuse ;
+    color: black;
+}
+.t-hrow{
+    background-color: chartreuse;
+    color: black;
+}
+.add-racerBox {
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: green;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between labels and inputs */
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: chartreuse;
+    text-align: left;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: black;
+    color: green;
+    outline: none;
+}
+
+input::placeholder {
+    color: green;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+input:focus {
+    border-color: limegreen;
+}
+.close{
+    color: limegreen;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus{
+    color: limegreen;
+    cursor: pointer;
+  }

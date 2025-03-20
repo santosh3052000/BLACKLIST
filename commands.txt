@@ -1,0 +1,11 @@
+For BackEnd :
+npm init -y
+npm i express mongoose cors dotenv nodemon
+git init
+
+For FrontEnd:
+npm create vite@latest client --template react
+cd client
+npm install
+npm install axios
+npm run dev
