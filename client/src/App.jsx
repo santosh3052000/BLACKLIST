@@ -26,8 +26,8 @@ function App() {
       driver.Car.toLowerCase().includes(searchText))
       setFilterDrivers(filteredDriver)
   }
-  const handleDelete = async(id)=>{
-    const isConfirm = window.confirm('U wanna delete !')
+  const handleDelete = async(id,name)=>{
+    const isConfirm = window.confirm(`U wanna delete !${name}`)
     if(isConfirm){
       await axios.delete(`http://127.0.0.1:1000/drivers/${id}`)
       getDrivers()
@@ -90,7 +90,7 @@ function App() {
               <td>{driver.Name}</td>
               <td>{driver.Car}</td>
               <td><button onClick={()=>handleEdit(driver,driver._id)}>Edit</button></td>
-              <td><button onClick={()=>handleDelete(driver._id)}>Delete</button></td>
+              <td><button onClick={()=>handleDelete(driver._id,driver.Name)}>Delete</button></td>
               </tr>
             )
           })}
